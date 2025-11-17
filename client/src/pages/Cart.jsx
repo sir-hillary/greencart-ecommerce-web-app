@@ -231,12 +231,12 @@ const Cart = () => {
                     {address.country}
                   </p>
                 ))}
-                <p
+                <button
                   onClick={() => navigate("/add-address")}
                   className="text-primary text-center cursor-pointer p-2 hover:bg-primary/10"
                 >
                   Add address
-                </p>
+                </button>
               </div>
             )}
           </div>
