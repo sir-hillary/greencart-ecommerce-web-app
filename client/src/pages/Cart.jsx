@@ -42,7 +42,7 @@ const Cart = () => {
       if (data.success) {
         setAddresses(data.addresses)
         if (data.addresses.length > 0) {
-          setSelectedAddress(data.addresses)
+          setSelectedAddress(data.addresses[0])
         }
       }else{
         toast.error(data.message)
@@ -232,6 +232,7 @@ const Cart = () => {
                   </p>
                 ))}
                 <button
+                  type="button"
                   onClick={() => navigate("/add-address")}
                   className="text-primary text-center cursor-pointer p-2 hover:bg-primary/10"
                 >
